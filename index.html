@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LINEWATCH - Danh mục máy</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div>
+        <div class="brand">LINEWATCH</div>
+        <div class="sub">Theo dõi ca sản xuất</div>
+        <span class="role">Quản trị viên</span>
+        <nav class="nav">
+          <a href="#" class="active">Danh mục máy</a>
+          <a href="#">Quản lý dây chuyền</a>
+          <a href="#">Báo cáo dừng máy</a>
+        </nav>
+      </div>
+      <div class="shift">
+        Ca hiện tại
+        <b>Ca 2 · 14:00–22:00</b>
+        Tổ A · Xưởng 01
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <h1>Danh mục máy</h1>
+        <div class="user"><b>NV</b> Nguyên</div>
+      </header>
+
+      <main class="content">
+        <h2>Danh mục máy</h2>
+        <p class="muted">
+          Tra cứu dữ liệu máy để đối chiếu với sự cố và báo cáo
+        </p>
+
+        <div class="filters">
+          <input
+            type="search"
+            id="search"
+            placeholder="Tìm mã máy hoặc tên máy"
+          />
+          <select id="lineFilter">
+            <option value="">Tất cả dây chuyền</option>
+            <option>L01</option>
+            <option>L02</option>
+            <option>L03</option>
+          </select>
+        </div>
+
+        <div class="card">
+          <table>
+            <thead>
+              <tr>
+                <th>Mã máy</th>
+                <th>Tên máy</th>
+                <th>Dây chuyền</th>
+                <th>Trạng thái</th>
+                <th>Sự cố mở</th>
+                <th>Cập nhật gần nhất</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="machineBody"></tbody>
+          </table>
+          <p class="empty" id="empty" hidden>Không tìm thấy máy phù hợp.</p>
+        </div>
+      </main>
+    </div>
+
+    <dialog id="modal">
+      <div class="modal-head">
+        <div>
+          <small class="muted">CHI TIẾT MÁY</small>
+          <h3 id="mName"></h3>
+        </div>
+        <button id="modalX" aria-label="Đóng">✕</button>
+      </div>
+      <span class="status" id="mStatus"></span>
+      <dl>
+        <div>
+          <dt>Mã máy</dt>
+          <dd id="mCode"></dd>
+        </div>
+        <div>
+          <dt>Dây chuyền</dt>
+          <dd id="mLine"></dd>
+        </div>
+        <div>
+          <dt>Sự cố mở</dt>
+          <dd id="mOpen"></dd>
+        </div>
+        <div>
+          <dt>Cập nhật gần nhất</dt>
+          <dd id="mTime"></dd>
+        </div>
+      </dl>
+      <div class="note">
+        <small class="muted">Ghi chú</small>
+        <p id="mNote"></p>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
