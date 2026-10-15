@@ -18,5 +18,5 @@
 
 ## 5. Các liên kết quan trọng
 - **Link Figma:** [https://www.figma.com/design/GvhL62Lkss6xjzEPFKD5nL/BTL-14-LineWatch-%25E2%2580%2593-UI-n%25C3%25A2ng-c%25E1%25BA%25A5p?node-id=0-1&p=f&t=WoNUtHmxyaQ2IMY0-0](https://www.figma.com/design/Hb7wMQduLWJliOzpJWGR98/BTL-14-LineWatch-%25E2%2580%2593-Full-UI-Prototype?node-id=2-2&p=f&t=scfdJBhzbdJXe74M-0
-- **Link Video:** [Dán link Video quay demo trang này vào đây]
+- **Link Video:** [[https://www.youtube.com/watch?v=3VF_UMxyxog](https://www.youtube.com/watch?v=3VF_UMxyxog)]
 - **Link GitHub:** [https://github.com/Lvs-coder/my-project](https://github.com/Lvs-coder/my-project)
